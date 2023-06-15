@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy:4.0.2'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.8.0'
+}
+
+test {
+    useTestNG()
+}
